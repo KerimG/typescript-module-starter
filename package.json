@@ -1,6 +1,6 @@
 {
-  "name": "typescript-starter",
-  "version": "1.0.0",
+  "name": "typescript-module-starter",
+  "version": "0.0.1",
   "description": "A sample TS project that can be used as a starter/scaffold.",
   "main": "./lib/cjs/index.js",
   "scripts": {
