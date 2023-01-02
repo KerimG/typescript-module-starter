@@ -2,7 +2,7 @@
   "name": "typescript-starter",
   "version": "1.0.0",
   "description": "A sample TS project that can be used as a starter/scaffold.",
-  "main": "index.js",
+  "main": "./lib/cjs/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,6 +13,22 @@
   ],
   "author": "Kerim Güney <kerim@gueney.io> (https://gueney.io)",
   "license": "MIT",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./lib/esm/types/index.d.ts",
+        "default": "./lib/esm/index.mjs"
+      },
+      "require": {
+        "types": "./lib/cjs/types/index.d.ts",
+        "default": "./lib/cjs/index.js"
+      }
+    }
+  },
+  "types": "./lib/cjs/types/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
   "devDependencies": {
     "@tsconfig/node18": "^1.0.1",
     "@typescript-eslint/eslint-plugin": "^5.47.1",
