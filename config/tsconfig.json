@@ -1,0 +1,10 @@
+{
+  "extends": "@tsconfig/node18/tsconfig.json",
+  "compilerOptions": {
+    /* Visit https://aka.ms/tsconfig.json to read more about this file */
+    "outDir": "lib",
+    "rootDir": "src",
+    "pretty": true
+  },
+  "include": ["src/index.ts"]
+}
